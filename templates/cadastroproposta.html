@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cadastro Proposta de Lei</title>
+</head>
+<body>
+	<div style= "width: 300px; text-align: center;">
+      <h1>Cadastro de Posposta</h1>
+    <form method="POST">
+      {% csrf_token %}
+      {{form.as_p}}
+      <button type="submit">Cadastre</button>
+    </form>
+  </div>
+</body>
+</html>

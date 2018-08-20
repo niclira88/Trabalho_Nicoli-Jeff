@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Detalhes da Proposta</title>
+</head>
+<body>
+	<h2>{{ object.title }}</h2>
+	<p>{{ object.description }}</p>
+	<ul>
+		<a href="{% url 'votacao:propostalista' %}">Voltar</a>
+		<button type="submit">Votar Contra</button>
+		<button type="submit">Votar a Favor</button>
+		<a href='comment/'><button type="submit">Comentar</button></a>
+	</ul>
+</body>
+</html>

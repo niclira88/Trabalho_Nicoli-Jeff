@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Listagem das Propostas</title>
+  </head>
+  <body>
+    <ul>
+    <h1>Lista de Propostas</h1>
+    	<ul>
+		    {% for object in object_list %}
+		    <li><a href="{% url 'votacao:propostadetalhes' object.pk %}">{{ object }}</a></li>    
+		    {% endfor %}
+		</ul>
+    <a href="{% url 'home' %}">Voltar</a>
+    </ul>    
+  </body>
+</html>
